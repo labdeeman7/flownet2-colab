@@ -1,5 +1,8 @@
-# flownet2-pytorch 
+# flownet2-colab 
+## Quick note
+Minor changes are required to get flownet 2 running on colab. Scipy.misc dependencies which throw errors were removed/replace, the C++ CUDA packages setup.py was also slightly changed to fit colab, and some depreciated code for the time library were updated. Enjoy!!    
 
+# flownet2-pytorch 
 Pytorch implementation of [FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks](https://arxiv.org/abs/1612.01925). 
 
 Multiple GPU training is supported, and the code provides examples for training or inference on [MPI-Sintel](http://sintel.is.tue.mpg.de/) clean and final datasets. The same commands can be used for training or inference with other datasets. See below for more detail.
